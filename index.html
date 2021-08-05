@@ -15,6 +15,8 @@
   <meta property="og:site_name" content="プログラミング教材">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180×180" href="img/logo.png">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/common1.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -24,6 +26,13 @@
 </head>
 
 <body>
+<div id="loading">
+  <div id="loading_box">
+    <div class="loading-one animation_loading">
+      <p class="loading-txt">Loading</p>
+    </div>
+  </div>
+</div>
   <header>
     <div class="header_all">
       <a href="index.html" class="logo">
@@ -60,7 +69,7 @@
       </div>
       <div class="service_all">
         <ul class="service_list">
-          <li class="service_item _service1">
+          <li class="service_item _service1 fadeRightTrigger">
             <div class="service_img _service"></div>
             <div class="service_inner_txt">
               <p class="service_subttl">1IT教育</p>
@@ -70,7 +79,7 @@
               </p>
             </div>
           </li>
-          <li class="service_item _service2">
+          <li class="service_item _service2 fadeLeftTrigger">
             <div class="service_img _service"></div>
             <div class="service_inner_txt">
               <p class="service_subttl">2IT教育</p>
@@ -80,7 +89,7 @@
               </p>
             </div>
           </li>
-          <li class="service_item _service3">
+          <li class="service_item _service3 fadeRightTrigger">
             <div class="service_img _service"></div>
             <div class="service_inner_txt">
               <p class="service_subttl">3IT教育</p>
@@ -90,7 +99,7 @@
               </p>
             </div>
           </li>
-          <li class="service_item _service4">
+          <li class="service_item _service4 fadeLeftTrigger">
             <div class="service_img _service"></div>
             <div class="service_inner_txt">
               <p class="service_subttl">IT教育</p>
@@ -115,7 +124,7 @@
           </p>
         </div>
         <div class="about_list">
-          <div class="about_item">
+          <div class="about_item fadeUpTrigger">
             <a href="html/about.html" class="top_about_link">
               <p class="about_sub_ttl">企業概要</p>
               <p class="about_sub_txt">About</p>
@@ -124,7 +133,7 @@
               </div>
             </a>
           </div>
-          <div class="about_item">
+          <div class="about_item fadeUpTrigger">
             <a href="html/about.html" class="top_about_link">
               <p class="about_sub_ttl">企業概要</p>
               <p class="about_sub_txt">About</p>
@@ -133,7 +142,7 @@
               </div>
             </a>
           </div>
-          <div class="about_item">
+          <div class="about_item fadeUpTrigger">
             <a href="html/about.html" class="top_about_link">
               <p class="about_sub_ttl">企業概要</p>
               <p class="about_sub_txt">About</p>
@@ -150,14 +159,14 @@
         <h2 class="section_ttl"><small></small>News</h2>
       </div>
       <div class="news_all">
-        <ul class="news_list">
+        <ul class="news_list slider-3">
           <li class="news_item">
             <a href="html/news.html">
               <div class="news_img">
                 <img src="img/news.png" alt="ニュース画像">
               </div>
               <div class="news_txt">
-                <p class="news_ttl">WithCode創設</p>
+                <p class="news_ttl">WithCode創設1</p>
                 <p class="news_date">2021.01.01</p>
               </div>
             </a>
@@ -168,7 +177,7 @@
                 <img src="img/news.png" alt="ニュース画像">
               </div>
               <div class="news_txt">
-                <p class="news_ttl">WithCode創設</p>
+                <p class="news_ttl">WithCode創設2</p>
                 <p class="news_date">2021.01.01</p>
               </div>
             </a>
@@ -179,7 +188,29 @@
                 <img src="img/news.png" alt="ニュース画像">
               </div>
               <div class="news_txt">
-                <p class="news_ttl">WithCode創設</p>
+                <p class="news_ttl">WithCode創設3</p>
+                <p class="news_date">2021.01.01</p>
+              </div>
+            </a>
+          </li>
+          <li class="news_item">
+            <a href="html/news.html">
+              <div class="news_img">
+                <img src="img/news.png" alt="ニュース画像">
+              </div>
+              <div class="news_txt">
+                <p class="news_ttl">WithCode創設4</p>
+                <p class="news_date">2021.01.01</p>
+              </div>
+            </a>
+          </li>
+          <li class="news_item">
+            <a href="html/news.html">
+              <div class="news_img">
+                <img src="img/news.png" alt="ニュース画像">
+              </div>
+              <div class="news_txt">
+                <p class="news_ttl">WithCode創設5</p>
                 <p class="news_date">2021.01.01</p>
               </div>
             </a>
@@ -190,6 +221,7 @@
         <a href="html/service.html">VIEW MORE</a>
       </div>
     </section>
+    
   </main>
   <footer>
     <div class="footer_logo">
@@ -211,7 +243,7 @@
         <a href="html/contact.html">Contact</a>
       </li>
     </ul>
-    <ul class="footer_sns">
+    <ul class="footer_sns ">
       <li class="sns_icon1">
         <a href="#"><img src="img/twitter.png" alt="Twitterアイコン"></a>
       </li>
@@ -221,8 +253,9 @@
     </ul>
     <small class="footer_txt">©Losta Inc.All Right Reserved.</small>
   </footer>
+  <script src="js/jquery-3.6.0.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
 </body>
 

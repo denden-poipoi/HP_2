@@ -66,6 +66,31 @@
   top: 50%;
 }
 
+/*フェードイン*/
+
+/* fadeUp */
+.fadeUp {
+  animation: fadeUpAnime 0.8s forwards; /* fadeUpAnimeを0.8秒で一回実行 */
+  opacity: 0;
+}
+
+
+.fadeUpTrigger, .fadeLeftTrigger, .fadeRightTrigger {
+  opacity: 0; /* 初めは見えない */
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0; /* 初めは見えない */
+    transform: translateY(100px); /* 100px下に動かしておく */
+  }
+
+  to {
+    opacity: 1; /* 可視化 */
+    transform: translateY(0); /* 元の位置 */
+  }
+}
+
 @media screen and (max-width: 1024px) {}
 @media screen and (max-width: 768px) {}
 @media screen and (max-width: 480px) {

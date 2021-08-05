@@ -96,6 +96,57 @@
 .service_descript {
   font-size: 15px;
 }
+
+/*フェードイン*/
+
+/* fadeLeft */
+.fadeLeft {
+  animation: fadeLeftAnime 0.8s forwards; /* fadeLeftAnimeを0.8秒で一回実行 */
+  opacity: 0;
+  overflow: hidden;
+}
+
+/* fadeRight */
+.fadeRight {
+  animation: fadeRightAnime 0.8s forwards; /* fadeRightAnimeを0.8秒で一回実行 */
+  opacity: 0;
+  overflow: hidden;
+}
+
+.fadeUpTrigger, .fadeLeftTrigger, .fadeRightTrigger {
+  opacity: 0; /* 初めは見えない */
+}
+
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0; /* 初めは見えない */
+    transform: translateX(100px);/* 100px右に動く */
+  }
+
+  to {
+    opacity: 1; /* 可視化 */
+    transform: translateX(0); /* 元の位置 */
+  }
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0; /* 初め見えない */
+    transform: translateX(-100px);/* 100px左に動く */
+  }
+
+  to {
+    opacity: 1; /* 可視化 */
+    transform: translateX(0); /* 元の位置 */
+  }
+}
+
+
+
+
+
+
 @media screen and (max-width: 1024px) {}
 @media screen and (max-width: 768px) {
 .service_item {

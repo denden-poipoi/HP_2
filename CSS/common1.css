@@ -191,6 +191,157 @@ footer {
   text-align: center;
   font-size: 15px;
 }
+
+/*ロード画面*/
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+#loading_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.loading-one {
+  display: inline-block;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.loading-one p.loading-txt {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.25em;
+  line-height: 2.0;
+  padding: 2em 0;
+}
+
+.animation_loading {
+  animation: equalizer_loading 7000ms infinite;
+  animation-iteration-count: 10;
+}
+@keyframes equalizer_loading {
+  0% {
+    width: 70%;
+  }
+  10% {
+    width: 50%;
+  }
+  20% {
+    width: 100%;
+  }
+  30% {
+    width: 10%;
+  }
+  40% {
+    width: 50%;
+  }
+  50% {
+    width: 70%;
+  }
+  60% {
+    width: 50%;
+  }
+  70% {
+    width: 10%;
+  }
+  80% {
+    width: 100%;
+  }
+  90% {
+    width: 10%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+
+
+
+
+/* fadeUp */
+.fadeUp {
+  animation: fadeUpAnime 0.8s forwards; /* fadeUpAnimeを0.8秒で一回実行 */
+  opacity: 0;
+}
+
+/* fadeLeft */
+.fadeLeft {
+  animation: fadeLeftAnime 0.8s forwards; /* fadeLeftAnimeを0.8秒で一回実行 */
+  opacity: 0;
+  overflow: hidden;
+}
+
+/* fadeRight */
+.fadeRight {
+  animation: fadeRightAnime 0.8s forwards; /* fadeRightAnimeを0.8秒で一回実行 */
+  opacity: 0;
+  overflow: hidden;
+}
+
+.fadeUpTrigger, .fadeLeftTrigger, .fadeRightTrigger {
+  opacity: 0; /* 初めは見えないようにしておく */
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0; /* 初めは見えないようにしておく */
+    transform: translateY(100px); /* 100px下に動かしておく */
+  }
+
+  to {
+    opacity: 1; /* 可視化する */
+    transform: translateY(0); /* 元の位置に戻す */
+  }
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0; /* 初めは見えないようにしておく */
+    transform: translateX(100px);/* 100px右に動かしておく */
+  }
+
+  to {
+    opacity: 1; /* 可視化する */
+    transform: translateX(0); /* 元の位置に戻す */
+  }
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0; /* 初めは見えないようにしておく */
+    transform: translateX(-100px);/* 100px左に動かしておく */
+  }
+
+  to {
+    opacity: 1; /* 可視化する */
+    transform: translateX(0); /* 元の位置に戻す */
+  }
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0; /* 初め見えない */
+    transform: translateX(-100px);/* 100px左に動く */
+  }
+
+  to {
+    opacity: 1; /* 可視化 */
+    transform: translateX(0); /* 元の位置 */
+  }
+}
+
+
+
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 768px) {

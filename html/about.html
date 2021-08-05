@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -14,6 +15,8 @@
   <meta property="og:site_name" content="プログラミング教材">
   <link rel="icon" href="../favicon.ico">
   <link rel="apple-touch-icon" sizes="180×180" href="img/logo.png">
+  <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
   <link rel="stylesheet" type="text/css" href="../css/reset.css">
   <link rel="stylesheet" type="text/css" href="../css/common1.css">
   <link rel="stylesheet" type="text/css" href="../css/common2.css">
@@ -24,6 +27,13 @@
 </head>
 
 <body>
+  <div id="loading">
+    <div id="loading_box">
+      <div class="loading-one animation_loading">
+        <p class="loading-txt">Loading</p>
+      </div>
+    </div>
+  </div>
   <header>
     <div class="header_all">
       <a href="../index.html" class="logo">
@@ -42,9 +52,9 @@
     <p class="drawer"></p>
   </header>
   <main>
-    <section class="top">
-      <div class="top_bg">
-        <p class="top_ttl">
+    <section class="top ">
+      <div class="top_bg ">
+        <p class="top_ttl ">
           <small>会社概要</small>
           About
         </p>
@@ -61,10 +71,10 @@
       </ul>
     </section>
     <section class="about_com">
-      <div class="inner">
+    <div class="inner ">
         <h2 class="section_ttl"><small></small>Company</h2>
-        <div class="about_com_all">
-          <div class="about_com_list">
+        <div class="about_com_all  fadeUpTrigger">
+          <div class="about_com_list ">
             <div class="about_com_item">
               <h3 class="about_com_ttl">会社名</h3><br>
               <p class="about_com_txt">株式会社〇〇〇〇</p>
@@ -108,10 +118,10 @@
         </div>
       </div>
     </section>
-    <section class="about_mem">
-      <div class="inner">
+    <section class="about_mem ">
+      <div class="inner ">
         <h2 class="section_ttl"><small></small>Board Member</h2>
-        <div class="about_mem_all">
+        <div class="about_mem_all  fadeUpTrigger">
           <div class="about_mem_per">
             <h3 class="about_mem_ttl">代表取締役</h3>
             <p class="about_mem_name">〇〇〇〇<br>〇〇〇〇</p>
@@ -133,7 +143,7 @@
       <div class="inner">
         <h2 class="section_ttl"><small></small>Access</h2>
       </div>
-      <div class="about_acc_map">
+      <div class="about_acc_map  fadeRightTrigger">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.769987216786!2d139.69944711532793!3d35.65803823885082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1614969560710!5m2!1sja!2sjp"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
@@ -141,14 +151,14 @@
       </div>
       <div class="inner">
         <div class="about_acc_list">
-          <div class="about_acc_item">
+          <div class="about_acc_item fadeLeftTrigger">
             <h3 class="about_acc_ttl">住所</h3>
             <p class="about_acc_txt">
               〒〇〇〇-〇〇〇〇<br>
               〇〇〇〇〇〇〇〇〇〇〇〇
             </p>
           </div>
-          <div class="about_acc_item">
+          <div class="about_acc_item fadeLeftTrigger">
             <h3 class="about_acc_ttl">最寄駅</h3>
             <p class="about_acc_txt">
               〇〇〇〇〇〇〇〇
@@ -189,8 +199,9 @@
     </ul>
     <small class="footer_txt">©Losta Inc.All Right Reserved.</small>
   </footer>
+  <script src="../js/jquery-3.6.0.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../slick/slick.min.js"></script>
   <script type="text/javascript" src="../js/common.js"></script>
 </body>
 

@@ -184,13 +184,14 @@
   margin-bottom: 80px;
 }
 .news_list {
+
   display: flex;
   justify-content: space-between;
 }
 .news_item {
-  width: 30%;
+  width: 270px;
   height: auto;
-  margin-bottom: 100px;
+  margin: 100px 30px;
   -webkit-box-shadow: 10px 10px 20px #ddd;
   box-shadow: 10px 10px 20px #ddd;
   cursor: pointer;
@@ -243,6 +244,11 @@
   right: 13px;
   top: 50%;
 }
+
+
+
+
+/*レスポンシブ*/
 @media screen and (max-width: 1024px) {}
 @media screen and (max-width: 768px) {
  .service_item {
@@ -370,3 +376,11 @@
 
 
 
+.slider-3 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slider-3 .slick-arrow:before {
+  color: #2196F3;
+}
